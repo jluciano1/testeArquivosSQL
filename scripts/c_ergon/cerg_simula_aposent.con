@@ -1,0 +1,19 @@
+ALTER TABLE cerg_simula_aposent ADD CONSTRAINT 
+cerg_simula_aposent_fk FOREIGN KEY
+(id_simulacao) REFERENCES TRPV_SIMULACAO_APOS(id)
+/
+ALTER TABLE cerg_simula_aposent
+MODIFY (tipoapos NOT NULL)
+/
+ALTER TABLE cerg_simula_aposent
+MODIFY (finalidade NOT NULL)
+/
+ALTER TABLE cerg_simula_aposent
+MODIFY (numfunc NOT NULL)
+/
+ALTER TABLE cerg_simula_aposent
+MODIFY (numvinc NOT NULL)
+/
+ALTER TABLE cerg_simula_aposent
+MODIFY (dtini NOT NULL)
+/

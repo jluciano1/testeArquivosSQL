@@ -1,0 +1,9 @@
+create global temporary table trpvrel0021_temp
+(
+  nome      varchar2(2000),
+  matricula varchar2(2000),
+  dtini     varchar2(2000),
+  dtfim     varchar2(2000),
+  msg       varchar2(2000)
+) on commit preserve rows
+/

@@ -1,0 +1,22 @@
+--
+--regras de congelamento de manutenção pré aposentadoria
+--
+
+declare
+  cursor c1 is
+    select empresa
+      from empresas;
+begin
+   
+  for rr in c1 loop
+    begin
+      insert into tipo_vantagem_empresa (vantagem, empresa) values ('BLOQUEIO_PRE_APOSENT', rr.empresa);
+      commit;
+    exception
+      when others then
+      null;
+    end;
+  end loop;
+  
+end;
+/

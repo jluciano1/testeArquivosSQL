@@ -1,0 +1,8 @@
+UPDATE CERG_SIMULA_APOSENT SET ID = (select substr(sys_guid(),1,8)||'-'||substr(sys_guid(),9,4)||'-'||substr(sys_guid(),13,4)||'-'||substr(sys_guid(),17,4)||'-'||substr(sys_guid(),21,12) from dual) WHERE ID IS NULL
+/
+COMMIT
+/
+delete cerg_simula_aposent where id_simulacao not in (select id from trpv_simulacao_apos);
+/
+COMMIT
+/
