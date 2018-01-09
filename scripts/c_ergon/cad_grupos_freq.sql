@@ -6,7 +6,7 @@ INSERT INTO ERG_GRUPOS_FREQ_
 (COEFICIENTE, DESCRICAO, FLEX_CAMPO_01, FLEX_CAMPO_02, FLEX_CAMPO_03, FLEX_CAMPO_04, FLEX_CAMPO_05, GRUPOFREQ, OBS)
 SELECT * FROM (
 SELECT COEFICIENTE,DESCRICAO,FLEX_CAMPO_01,FLEX_CAMPO_02,FLEX_CAMPO_03,FLEX_CAMPO_04,FLEX_CAMPO_05,GRUPOFREQ,OBS FROM ERG_GRUPOS_FREQ_ WHERE 1=0 UNION ALL
-SELECT TO_NUMBER(''), 'Relatório de certidão de regularidade previdenciária', '', '', '', '', '', 'CERT_PREVIDENCIARIA', 'Frequências utilizadas para emissão do relatório de certidão de regularidade previdenciária' FROM DUAL
+SELECT TO_NUMBER(''), 'Relatï¿½rio de certidï¿½o de regularidade previdenciï¿½ria', '', '', '', '', '', 'CERT_PREVIDENCIARIA', 'Frequï¿½ncias utilizadas para emissï¿½o do relatï¿½rio de certidï¿½o de regularidade previdenciï¿½ria' FROM DUAL
 ) TEMP_20170922131305
 WHERE (GRUPOFREQ) NOT IN
   (SELECT GRUPOFREQ FROM ERG_GRUPOS_FREQ_)
@@ -31,3 +31,6 @@ begin
   end loop;
 end;
 /
+
+asdasd
+asda
