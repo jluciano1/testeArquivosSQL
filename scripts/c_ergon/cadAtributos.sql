@@ -1,5 +1,5 @@
 --
---regras de congelamento de manuten��o pr� aposentadoria
+--regras de congelamento de manuten��o pr� aposentadoria arroz
 --
 SET SCAN OFF
 ALTER SESSION SET NLS_DATE_FORMAT = 'DD/MM/YYYY HH24:MI:SS';
